@@ -1,0 +1,9 @@
+D:\Projects\EventManagerWeb\EventManager.Models\bin\Release\netcoreapp2.0\EventManager.Models.deps.json
+D:\Projects\EventManagerWeb\EventManager.Models\bin\Release\netcoreapp2.0\EventManager.Models.dll
+D:\Projects\EventManagerWeb\EventManager.Models\bin\Release\netcoreapp2.0\EventManager.Models.pdb
+D:\Projects\EventManagerWeb\EventManager.Models\obj\Release\netcoreapp2.0\EventManager.Models.csprojAssemblyReference.cache
+D:\Projects\EventManagerWeb\EventManager.Models\obj\Release\netcoreapp2.0\EventManager.Models.csproj.CoreCompileInputs.cache
+D:\Projects\EventManagerWeb\EventManager.Models\obj\Release\netcoreapp2.0\EventManager.Models.AssemblyInfoInputs.cache
+D:\Projects\EventManagerWeb\EventManager.Models\obj\Release\netcoreapp2.0\EventManager.Models.AssemblyInfo.cs
+D:\Projects\EventManagerWeb\EventManager.Models\obj\Release\netcoreapp2.0\EventManager.Models.dll
+D:\Projects\EventManagerWeb\EventManager.Models\obj\Release\netcoreapp2.0\EventManager.Models.pdb

@@ -1,0 +1,6 @@
+D:\Projects\EventManagerWeb\EventDatabase\bin\Debug\netcoreapp2.0\EventDatabase.deps.json
+D:\Projects\EventManagerWeb\EventDatabase\bin\Debug\netcoreapp2.0\EventDatabase.dll
+D:\Projects\EventManagerWeb\EventDatabase\obj\Debug\netcoreapp2.0\EventDatabase.csprojAssemblyReference.cache
+D:\Projects\EventManagerWeb\EventDatabase\obj\Debug\netcoreapp2.0\EventDatabase.csproj.CoreCompileInputs.cache
+D:\Projects\EventManagerWeb\EventDatabase\obj\Debug\netcoreapp2.0\EventDatabase.AssemblyInfoInputs.cache
+D:\Projects\EventManagerWeb\EventDatabase\obj\Debug\netcoreapp2.0\EventDatabase.AssemblyInfo.cs

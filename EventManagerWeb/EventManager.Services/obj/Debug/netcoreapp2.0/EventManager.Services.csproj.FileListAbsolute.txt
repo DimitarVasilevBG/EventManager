@@ -1,0 +1,14 @@
+D:\Projects\EventManagerWeb\EventManager.Services\bin\Debug\netcoreapp2.0\EventManager.Services.deps.json
+D:\Projects\EventManagerWeb\EventManager.Services\bin\Debug\netcoreapp2.0\EventManager.Services.dll
+D:\Projects\EventManagerWeb\EventManager.Services\bin\Debug\netcoreapp2.0\EventManager.Services.pdb
+D:\Projects\EventManagerWeb\EventManager.Services\bin\Debug\netcoreapp2.0\EventManager.Database.dll
+D:\Projects\EventManagerWeb\EventManager.Services\bin\Debug\netcoreapp2.0\EventManager.Models.dll
+D:\Projects\EventManagerWeb\EventManager.Services\bin\Debug\netcoreapp2.0\EventManager.Database.pdb
+D:\Projects\EventManagerWeb\EventManager.Services\bin\Debug\netcoreapp2.0\EventManager.Models.pdb
+D:\Projects\EventManagerWeb\EventManager.Services\obj\Debug\netcoreapp2.0\EventManager.Services.csprojAssemblyReference.cache
+D:\Projects\EventManagerWeb\EventManager.Services\obj\Debug\netcoreapp2.0\EventManager.Services.csproj.CoreCompileInputs.cache
+D:\Projects\EventManagerWeb\EventManager.Services\obj\Debug\netcoreapp2.0\EventManager.Services.AssemblyInfoInputs.cache
+D:\Projects\EventManagerWeb\EventManager.Services\obj\Debug\netcoreapp2.0\EventManager.Services.AssemblyInfo.cs
+D:\Projects\EventManagerWeb\EventManager.Services\obj\Debug\netcoreapp2.0\EventManager.Services.csproj.CopyComplete
+D:\Projects\EventManagerWeb\EventManager.Services\obj\Debug\netcoreapp2.0\EventManager.Services.dll
+D:\Projects\EventManagerWeb\EventManager.Services\obj\Debug\netcoreapp2.0\EventManager.Services.pdb

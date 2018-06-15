@@ -1,0 +1,38 @@
+﻿@model EventViewListingModel
+@{
+    ViewData["Title"] = "EventManager";
+}
+
+<h2>Events</h2>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>StartTime</th>
+                <th>EndTime</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var eventModel in Model.events)
+            {
+            <tr>
+
+                <td>@eventModel.Name</td>
+                <td>@eventModel.Location</td>
+                <td>@eventModel.StartTime</td>
+                <td>@eventModel.EndTime</td>
+                <td style="text-align:right"><button type="button" class="btn">@Html.ActionLink("Edit", "Edit", "Event", new { id = eventModel.ID }, null)</button></td>
+                <td style="text-align:left"><button type="button" class="btn">@Html.ActionLink("Delete", "Delete", "Event", new { id = eventModel.ID }, null)</button></td>
+            </tr>
+                
+
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+

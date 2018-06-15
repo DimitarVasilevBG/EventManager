@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventManager.Database\EventManager.Database.csproj" />
+    <ProjectReference Include="..\EventManager.Models\EventManager.Models.csproj" />
+  </ItemGroup>
+
+</Project>
