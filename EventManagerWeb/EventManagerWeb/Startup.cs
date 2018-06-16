@@ -9,23 +9,19 @@ namespace EventManagerWeb
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; set; }
-        public Startup(IHostingEnvironment env)
+        public IConfiguration Configuration { get; }
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", false, true)
-                .AddEnvironmentVariables();
-            Configuration = builder.Build();
-
-            var config = new Configuration(Configuration["ConnectionStrings:EventManager"]);
+            Configuration = configuration;
+            var ConnectionString = Configuration.GetConnectionString("EventManager");
+            var dbConfig = new Configuration(ConnectionString);
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
             services.AddAutoMapper();
+            services.AddMvc();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -34,6 +30,7 @@ namespace EventManagerWeb
             {
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage();
             }
             else
             {

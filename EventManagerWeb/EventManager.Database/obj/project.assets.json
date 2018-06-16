@@ -3582,11 +3582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\EventManager\\EventManagerWeb\\EventManager.Database\\EventManager.Database.csproj",
+      "projectUniqueName": "D:\\Projects\\EventManagerWeb\\EventManager.Database\\EventManager.Database.csproj",
       "projectName": "EventManager.Database",
-      "projectPath": "D:\\Repo\\EventManager\\EventManagerWeb\\EventManager.Database\\EventManager.Database.csproj",
+      "projectPath": "D:\\Projects\\EventManagerWeb\\EventManager.Database\\EventManager.Database.csproj",
       "packagesPath": "C:\\Users\\mitak\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\EventManager\\EventManagerWeb\\EventManager.Database\\obj\\",
+      "outputPath": "D:\\Projects\\EventManagerWeb\\EventManager.Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

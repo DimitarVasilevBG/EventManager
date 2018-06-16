@@ -20,8 +20,8 @@
 
                 <td>@eventModel.Name</td>
                 <td>@eventModel.Location</td>
-                <td>@eventModel.StartTime</td>
-                <td>@eventModel.EndTime</td>
+                <td>@eventModel.StartTime.ToShortDateString() @eventModel.StartTime.ToShortTimeString()</td>
+                <td>@eventModel.EndTime.ToShortDateString() @eventModel.EndTime.ToShortTimeString()</td>
                 <td style="text-align:right">@Html.ActionLink("Edit", "Edit", "Event", new { id = eventModel.ID, }, new { @class = "btn btn-primary" })</td>
                 <td style="text-align:left">@Html.ActionLink("Delete", "Delete", "Event", new { id = eventModel.ID, }, new { @class = "btn btn-danger" })</td>
             </tr>

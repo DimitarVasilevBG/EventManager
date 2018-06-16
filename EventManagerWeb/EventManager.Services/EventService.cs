@@ -19,13 +19,13 @@ namespace EventManager.Services
             var events = new List<Event>();
             foreach (var dbEvent in dbEvents)
             {
-                events.Add(new Event(dbEvent.ID,dbEvent.Name,dbEvent.Location, dbEvent.StartTime,dbEvent.EndTime));
+                events.Add(new Event(dbEvent.ID, dbEvent.Name, dbEvent.Location, dbEvent.StartTime, dbEvent.EndTime));
             }
             return events;
         }
         public static void CreateEvent(EventDbModel eventToSave)
         {
-            EventsRepository.Add(eventToSave,true);
+            EventsRepository.Add(eventToSave, true);
 
         }
         public static EventDbModel FindByID(int id)

@@ -25,10 +25,10 @@ namespace EventManagerWeb.Controllers
         {
             if (!ModelState.IsValid)
             {
-               
+
                 return View(model);
             }
-            var eventObj = new Event(model.ID,model.Name, model.Location, model.StartTime, model.EndTime);
+            var eventObj = new Event(model.ID, model.Name, model.Location, model.StartTime, model.EndTime);
             var dbEventToCreate = _mapper.Map<EventDbModel>(eventObj);
             EventService.CreateEvent(dbEventToCreate);
             return Redirect("/");
@@ -39,7 +39,7 @@ namespace EventManagerWeb.Controllers
             return View(dbEvent);
         }
         [HttpPost]
-        public IActionResult Edit(int ID,CreateViewModel model)
+        public IActionResult Edit(int ID, CreateViewModel model)
         {
             if (!ModelState.IsValid)
             {

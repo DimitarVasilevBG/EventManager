@@ -7,12 +7,3 @@ D:\Projects\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventMan
 D:\Projects\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.AssemblyInfo.cs
 D:\Projects\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.dll
 D:\Projects\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.pdb
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\bin\Debug\netcoreapp2.0\EventManager.Models.deps.json
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\bin\Debug\netcoreapp2.0\EventManager.Models.dll
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\bin\Debug\netcoreapp2.0\EventManager.Models.pdb
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.csprojAssemblyReference.cache
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.csproj.CoreCompileInputs.cache
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.AssemblyInfoInputs.cache
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.AssemblyInfo.cs
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.dll
-D:\Repo\EventManager\EventManagerWeb\EventManager.Models\obj\Debug\netcoreapp2.0\EventManager.Models.pdb

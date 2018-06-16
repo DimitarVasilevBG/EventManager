@@ -9,14 +9,3 @@ D:\Projects\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventM
 D:\Projects\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventManager.Database.pdb
 D:\Projects\EventManagerWeb\EventManager.Database\bin\Debug\netcoreapp2.0\EventManager.Database.runtimeconfig.json
 D:\Projects\EventManagerWeb\EventManager.Database\bin\Debug\netcoreapp2.0\EventManager.Database.runtimeconfig.dev.json
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\bin\Debug\netcoreapp2.0\EventManager.Database.deps.json
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\bin\Debug\netcoreapp2.0\EventManager.Database.runtimeconfig.json
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\bin\Debug\netcoreapp2.0\EventManager.Database.runtimeconfig.dev.json
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\bin\Debug\netcoreapp2.0\EventManager.Database.dll
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\bin\Debug\netcoreapp2.0\EventManager.Database.pdb
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventManager.Database.csprojAssemblyReference.cache
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventManager.Database.csproj.CoreCompileInputs.cache
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventManager.Database.AssemblyInfoInputs.cache
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventManager.Database.AssemblyInfo.cs
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventManager.Database.dll
-D:\Repo\EventManager\EventManagerWeb\EventManager.Database\obj\Debug\netcoreapp2.0\EventManager.Database.pdb

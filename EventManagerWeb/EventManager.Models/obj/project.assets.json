@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\EventManager\\EventManagerWeb\\EventManager.Models\\EventManager.Models.csproj",
+      "projectUniqueName": "D:\\Projects\\EventManagerWeb\\EventManager.Models\\EventManager.Models.csproj",
       "projectName": "EventManager.Models",
-      "projectPath": "D:\\Repo\\EventManager\\EventManagerWeb\\EventManager.Models\\EventManager.Models.csproj",
+      "projectPath": "D:\\Projects\\EventManagerWeb\\EventManager.Models\\EventManager.Models.csproj",
       "packagesPath": "C:\\Users\\mitak\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\EventManager\\EventManagerWeb\\EventManager.Models\\obj\\",
+      "outputPath": "D:\\Projects\\EventManagerWeb\\EventManager.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
