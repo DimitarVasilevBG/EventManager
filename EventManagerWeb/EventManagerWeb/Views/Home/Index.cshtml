@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "EventManager";
 }
-
 <h2>Events</h2>
 <div class="container">
     <table class="table">
@@ -23,10 +22,10 @@
                 <td>@eventModel.Location</td>
                 <td>@eventModel.StartTime</td>
                 <td>@eventModel.EndTime</td>
-                <td style="text-align:right"><button type="button" class="btn">@Html.ActionLink("Edit", "Edit", "Event", new { id = eventModel.ID }, null)</button></td>
-                <td style="text-align:left"><button type="button" class="btn">@Html.ActionLink("Delete", "Delete", "Event", new { id = eventModel.ID }, null)</button></td>
+                <td style="text-align:right">@Html.ActionLink("Edit", "Edit", "Event", new { id = eventModel.ID, }, new { @class = "btn btn-primary" })</td>
+                <td style="text-align:left">@Html.ActionLink("Delete", "Delete", "Event", new { id = eventModel.ID, }, new { @class = "btn btn-danger" })</td>
             </tr>
-                
+
 
             }
         </tbody>

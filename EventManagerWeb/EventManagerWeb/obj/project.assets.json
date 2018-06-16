@@ -2,6 +2,32 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "AutoMapper/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5099,6 +5125,31 @@
     }
   },
   "libraries": {
+    "AutoMapper/7.0.0": {
+      "sha512": "+aSJPxOhi03Il8jsOia46N9u627+Ub7fwFdrz5qT6LKdwbgfK+t3ZaKQ6yTi5uhudIDwQNOxNcMNk6L/WCpgng==",
+      "type": "package",
+      "path": "automapper/7.0.0",
+      "files": [
+        "automapper.7.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net45/AutoMapper.dll",
+        "lib/net45/AutoMapper.xml",
+        "lib/netstandard1.3/AutoMapper.dll",
+        "lib/netstandard1.3/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/4.0.0": {
+      "sha512": "ovgV98XPxdeKlQvLK0Nb6K9OfEE1V2favLG7xpV0v6R6uI3JAGKk5WyIuCQLT5lZVkQQ9BqHCvgHwip6KCYzNA==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/4.0.0",
+      "files": [
+        "automapper.extensions.microsoft.dependencyinjection.4.0.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -13422,6 +13473,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 4.0.0",
       "EventManager.Database >= 1.0.0",
       "EventManager.Models >= 1.0.0",
       "EventManager.Services >= 1.0.0",
@@ -13481,6 +13533,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.8, )"

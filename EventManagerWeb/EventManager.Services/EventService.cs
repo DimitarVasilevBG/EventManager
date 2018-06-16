@@ -9,12 +9,12 @@ using System.Linq;
 
 namespace EventManager.Services
 {
-    public class EventService
+    public static class EventService
     {
-        private EventsDbContext Context = new EventsDbContext();
-        public ICollection<Event> GetEvents()
+        private static EventsDbContext Context = new EventsDbContext();
+        private static EventDbRepository EventsRepository = new EventDbRepository(Context);
+        public static ICollection<Event> GetEvents()
         {
-            var EventsRepository = new EventDbRepository(Context);
             var dbEvents = EventsRepository.All().ToList();
             var events = new List<Event>();
             foreach (var dbEvent in dbEvents)
@@ -23,38 +23,29 @@ namespace EventManager.Services
             }
             return events;
         }
-        public void CreateEvent(Event eventToSave)
+        public static void CreateEvent(EventDbModel eventToSave)
         {
-            var dbEvent = new EventDbModel();
-            dbEvent.Name = eventToSave.Name;
-            dbEvent.Location = eventToSave.Location;
-            dbEvent.StartTime = eventToSave.StartTime;
-            dbEvent.EndTime = eventToSave.EndTime;
-            var eventRepository = new EventDbRepository(Context);
-            eventRepository.Add(dbEvent,true);
+            EventsRepository.Add(eventToSave,true);
 
         }
-        public EventDbModel FindByID(int ID)
+        public static EventDbModel FindByID(int id)
         {
-            var eventRepository = new EventDbRepository(Context);
-            var dbEvent = eventRepository.GetById(ID);
+            var dbEvent = EventsRepository.GetById(id);
 
             return dbEvent;
 
         }
-        public void EditEvent(CreateViewModel model)
+        public static void EditEvent(CreateViewModel model)
         {
-            var eventRepository = new EventDbRepository(Context);
-            var dbEvent = eventRepository.GetById(model.ID);
+            var dbEvent = EventsRepository.GetById(model.ID);
             dbEvent.Name = model.Name;
             dbEvent.Location = model.Location;
             dbEvent.StartTime = model.StartTime;
             dbEvent.EndTime = model.EndTime;
-            eventRepository.SaveChanges();
+            EventsRepository.SaveChanges();
         }
-        public void Delete(int id)
+        public static void Delete(int id)
         {
-            var EventsRepository = new EventDbRepository(Context);
             var eventToDelete = EventsRepository.GetById(id);
             EventsRepository.Delete(eventToDelete);
             EventsRepository.SaveChanges();

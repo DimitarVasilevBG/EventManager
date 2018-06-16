@@ -1,19 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EventManager.Database.DbModels;
+﻿using EventManager.Database.DbModels;
 using EventManager.Models.Models;
 using EventManager.Models.ViewModels;
 using EventManager.Services;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper.QueryableExtensions;
+using AutoMapper;
 
 namespace EventManagerWeb.Controllers
 {
     public class EventController : Controller
     {
-        EventService EventsService = new EventService();
-        
+        private readonly IMapper _mapper;
+
+        public EventController(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
         public IActionResult Create()
         {
             return View();
@@ -27,12 +29,13 @@ namespace EventManagerWeb.Controllers
                 return View(model);
             }
             var eventObj = new Event(model.ID,model.Name, model.Location, model.StartTime, model.EndTime);
-            EventsService.CreateEvent(eventObj);
+            var dbEventToCreate = _mapper.Map<EventDbModel>(eventObj);
+            EventService.CreateEvent(dbEventToCreate);
             return Redirect("/");
         }
         public IActionResult Edit(int ID)
         {
-            var dbEvent = EventsService.FindByID(ID);
+            var dbEvent = EventService.FindByID(ID);
             return View(dbEvent);
         }
         [HttpPost]
@@ -40,22 +43,16 @@ namespace EventManagerWeb.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var eventDbModel = new EventDbModel();
-                eventDbModel.ID = model.ID;
-                eventDbModel.Name = model.Name;
-                eventDbModel.Location = model.Location;
-                eventDbModel.StartTime = model.StartTime;
-                eventDbModel.EndTime = model.EndTime;
-
+                var eventDbModel = _mapper.Map<EventDbModel>(model);
                 return View(eventDbModel);
             }
-            EventsService.EditEvent(model);
+            EventService.EditEvent(model);
             return Redirect("/");
         }
         public IActionResult Delete(int ID)
         {
-            var dbEvent = EventsService.FindByID(ID);
-            EventsService.Delete(dbEvent.ID);
+            var dbEvent = EventService.FindByID(ID);
+            EventService.Delete(dbEvent.ID);
             return Redirect("/");
         }
     }

@@ -1,0 +1,18 @@
+1 You need to have Visual studio 2017 + asp.net mvc installed
+2 You need to have a server to host the database locally
+3 You need to set your connection string in the appsettings.json file in EventManagerWeb directory with text editor
+(Example)
+
+Appsettings.json connection string:
+
+"ConnectionStrings": {
+    "EventManager": "Server=(localdb)\\MSSQLLocalDB;Database=EventManager;Integrated Security=True"
+  }
+
+Add to the connection string your server name:
+
+
+"ConnectionStrings": {
+    "EventManager": "Server=Your_Server_Name;Database=EventManager;Integrated Security=True"
+  }
+4 Run the project via Visual studio

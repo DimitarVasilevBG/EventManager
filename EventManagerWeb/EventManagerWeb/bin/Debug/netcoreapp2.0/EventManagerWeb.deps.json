@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "237b32cc0c58a955e43eba74c379bbfaa69c7f85"
+    "signature": "3e35522898dfd0edf1444087360c2965fabd5150"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "EventManagerWeb/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "4.0.0",
           "EventManager.Database": "1.0.0",
           "EventManager.Models": "1.0.0",
           "EventManager.Services": "1.0.0",
@@ -35,6 +36,30 @@
         },
         "compile": {
           "EventManagerWeb.dll": {}
+        }
+      },
+      "AutoMapper/7.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/4.0.0": {
+        "dependencies": {
+          "AutoMapper": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4314,6 +4339,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+aSJPxOhi03Il8jsOia46N9u627+Ub7fwFdrz5qT6LKdwbgfK+t3ZaKQ6yTi5uhudIDwQNOxNcMNk6L/WCpgng==",
+      "path": "automapper/7.0.0",
+      "hashPath": "automapper.7.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ovgV98XPxdeKlQvLK0Nb6K9OfEE1V2favLG7xpV0v6R6uI3JAGKk5WyIuCQLT5lZVkQQ9BqHCvgHwip6KCYzNA==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/4.0.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.4.0.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
